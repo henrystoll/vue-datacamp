@@ -65,18 +65,17 @@ export default {
                 fill: false,
             }
         }
-        this.datasets = Object.values(names)
+        // this.datasets = Object.values(names)
     },
 }
 </script>
 <style scoped>
   .home {
-    height: 90vh;
-    width: 100vw;
-
   }
 
   .center {
+    height: 90vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
