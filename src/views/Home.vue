@@ -11,7 +11,7 @@ import {isSameDay} from "date-fns";import {format} from "date-fns";import {parse
       class="center"
     >
       <RiseLoader
-        color="#36D7B6"
+        color="#42b983"
         :size="30"
         margin="6px"
       />
@@ -65,7 +65,7 @@ export default {
                 fill: false,
             }
         }
-        // this.datasets = Object.values(names)
+        this.datasets = Object.values(names)
     },
 }
 </script>
