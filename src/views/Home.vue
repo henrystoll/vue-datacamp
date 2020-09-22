@@ -6,16 +6,13 @@ import {isSameDay} from "date-fns";import {format} from "date-fns";import {parse
       :labels="labels"
       :datasets="datasets"
     />
-    <div
+    <RiseLoader
       v-else
       class="center"
-    >
-      <RiseLoader
-        color="#42b983"
-        :size="30"
-        margin="6px"
-      />
-    </div>
+      color="#42b983"
+      :size="30"
+      margin="6px"
+    />
   </div>
 </template>
 
@@ -66,16 +63,18 @@ export default {
             }
         }
         this.datasets = Object.values(names)
+        // .filter(e => e.data[0] > 20000)
     },
 }
 </script>
 <style scoped>
   .home {
+    height: 90vh;
+    width: 100vw;
   }
 
   .center {
-    height: 90vh;
-    width: 100vw;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
